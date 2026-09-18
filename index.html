@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5C3T2ZNC');</script>
+  <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conectus Soluções Ambientais</title>
+  <title>Conectus Engenharia Ambiental</title>
   <meta name="description" content="Consultoria especializada em licenciamento ambiental, IBAMA, CETESB e regularização ambiental em Valinhos/SP. Soluções personalizadas e responsáveis para sua empresa.">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#1C3461">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Conectus Soluções Ambientais">
+  <meta property="og:title" content="Conectus Engenharia Ambiental">
   <meta property="og:description" content="Consultoria especializada em licenciamento ambiental, IBAMA, CETESB e regularização ambiental em Valinhos/SP.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://conectusambiental.com.br/">
-  <meta property="og:image" content="images/og-image.png">
+  <link rel="canonical" href="https://conectusambiental.com.br/">
+  <meta property="og:image" content="https://conectusambiental.com.br/images/favicon.png">
   <meta property="og:locale" content="pt_BR">
 
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Conectus Soluções Ambientais">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Conectus Engenharia Ambiental">
   <meta name="twitter:description" content="Consultoria especializada em licenciamento ambiental em Valinhos/SP.">
-  <meta name="twitter:image" content="images/og-image.png">
+  <meta name="twitter:image" content="https://conectusambiental.com.br/images/favicon.png">
 
   <!-- Schema.org — LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Conectus Soluções Ambientais",
-    "image": "https://conectusambiental.com.br/images/logo.png",
+    "name": "Conectus Engenharia Ambiental",
+    "image": "https://conectusambiental.com.br/images/favicon.png",
     "@id": "https://conectusambiental.com.br",
     "url": "https://conectusambiental.com.br",
     "telephone": "+55-19-99111-0898",
@@ -50,7 +58,7 @@
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
       "opens": "08:00",
-      "closes": "18:00"
+      "closes": "17:00"
     }],
     "sameAs": [
       "https://www.instagram.com/conectus.ambiental/",
@@ -58,6 +66,63 @@
       "https://www.facebook.com/conectus.ambiental"
     ],
     "description": "Consultoria especializada em licenciamento ambiental, IBAMA, CETESB e regularização ambiental em Valinhos/SP."
+  }
+  </script>
+
+  <!-- Schema.org — WebSite (sitelinks e busca) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Conectus Engenharia Ambiental",
+    "url": "https://conectusambiental.com.br/"
+  }
+  </script>
+
+  <!-- Schema.org — Navegação principal (sitelinks) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Páginas principais",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Início",
+        "url": "https://conectusambiental.com.br/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Sobre a Conectus",
+        "url": "https://conectusambiental.com.br/#sobre"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Licenciamento Ambiental",
+        "url": "https://conectusambiental.com.br/licenciamento-ambiental.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Serviços IBAMA",
+        "url": "https://conectusambiental.com.br/servicos-ibama.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Gestão de Resíduos",
+        "url": "https://conectusambiental.com.br/gestao-residuos.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "Contato",
+        "url": "https://conectusambiental.com.br/#contato"
+      }
+    ]
   }
   </script>
 
@@ -76,6 +141,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5C3T2ZNC"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <!-- ===== LOADER ===== -->
   <div id="loader" aria-hidden="true">
@@ -105,11 +174,19 @@
       <nav class="desktop-nav" aria-label="Navegação principal">
         <a href="#inicio">Início</a>
         <a href="#sobre">Sobre</a>
-        <a href="#servicos">Serviços</a>
+        <div class="nav-dropdown">
+          <a href="#servicos">Serviços <i class="fas fa-chevron-down" style="font-size: 0.8em; margin-left: 4px;"></i></a>
+          <div class="dropdown-menu">
+            <a href="licenciamento-ambiental.html">Licenciamento Ambiental</a>
+            <a href="servicos-ibama.html">Serviços IBAMA</a>
+            <a href="gestao-residuos.html">Gestão de Resíduos</a>
+          </div>
+        </div>
         <a href="#galeria">Galeria</a>
         <a href="#depoimentos">Depoimentos</a>
         <a href="#faq">FAQ</a>
         <a href="#contato">Contato</a>
+        <a href="https://blog.conectusambiental.com.br/">Blog</a>
       </nav>
 
       <a href="https://wa.me/5519991110898?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Conectus%20e%20gostaria%20de%20uma%20consultoria%20ambiental." class="header-whatsapp" target="_blank" rel="noopener noreferrer">
@@ -126,11 +203,15 @@
   <nav id="navMenu" class="mobile-nav" aria-label="Menu mobile" aria-hidden="true">
     <a href="#inicio" class="nav-link">Início</a>
     <a href="#sobre" class="nav-link">Sobre</a>
-    <a href="#servicos" class="nav-link">Serviços</a>
+    <a href="#servicos" class="nav-link">Serviços Gerais</a>
+    <a href="licenciamento-ambiental.html" class="nav-link sub-link" style="padding-left: 20px; font-size: 0.9em; color: var(--verde-claro);">— Licenciamento</a>
+    <a href="servicos-ibama.html" class="nav-link sub-link" style="padding-left: 20px; font-size: 0.9em; color: var(--verde-claro);">— Serviços IBAMA</a>
+    <a href="gestao-residuos.html" class="nav-link sub-link" style="padding-left: 20px; font-size: 0.9em; color: var(--verde-claro);">— Gestão de Resíduos</a>
     <a href="#galeria" class="nav-link">Galeria</a>
     <a href="#depoimentos" class="nav-link">Depoimentos</a>
     <a href="#faq" class="nav-link">FAQ</a>
     <a href="#contato" class="nav-link">Contato</a>
+    <a href="https://blog.conectusambiental.com.br/" class="nav-link">Blog</a>
     <a href="https://wa.me/5519991110898?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Conectus%20e%20gostaria%20de%20uma%20consultoria%20ambiental." class="nav-link nav-wpp" target="_blank" rel="noopener noreferrer">
       <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
     </a>
@@ -144,13 +225,7 @@
       <span></span><span></span><span></span><span></span>
     </div>
     <div class="hero-conteudo">
-      <div class="hero-badge">
-        <i class="fas fa-leaf" aria-hidden="true"></i>
-        Licenciamento ambiental especializado
-      </div>
       <h1>
-        <img src="images/logo.png" alt="Conectus Soluções Ambientais" class="hero-logo">
-      </h1>
       <h2>Soluções responsáveis para regularização e licenciamento ambiental</h2>
       <p>Atendemos indústrias, empresas e atividades rurais com expertise técnica e compromisso com a sustentabilidade.</p>
       <div class="hero-botoes">
@@ -171,11 +246,6 @@
           <strong data-target="100" data-suffix="%">100%</strong>
           <span>Soluções personalizadas</span>
         </div>
-        <div class="hero-stat-div" aria-hidden="true"></div>
-        <div class="hero-stat">
-          <strong data-target="2">2</strong>
-          <span>Engenheiras especializadas</span>
-        </div>
       </div>
     </div>
   </section>
@@ -191,7 +261,7 @@
           <h2>Duas engenheiras, uma missão: cuidar do meio ambiente</h2>
           <p>A Conectus Engenharia Ambiental surgiu do desejo mútuo de duas engenheiras, <strong>Angélica e Jaqueline</strong>, formadas na mesma turma do curso de Engenharia Ambiental e Sanitária.</p>
           <p>Unindo suas experiências em organizações públicas e privadas, criaram uma empresa focada em entregar soluções personalizadas, responsáveis e de qualidade, atendendo as exigências legais de acordo com a necessidade de cada cliente.</p>
-          <p>Somos especialistas em regularização e licenciamento ambiental, atendendo diversos ramos de empresas e atividades rurais. Nosso forte é o licenciamento ambiental, regularizações no IBAMA, SIGOR MTR, CADRI, logística reversa e demais documentações para cumprimento das exigências ambientais.</p>
+          <p>Atuamos com licenciamento ambiental, regularizações no IBAMA, SIGOR MTR, CADRI, logística reversa e demais documentações para cumprimento das exigências ambientais.</p>
           <a href="https://wa.me/5519991110898?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Conectus%20e%20gostaria%20de%20uma%20consultoria%20ambiental." class="btn-primario" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-whatsapp" aria-hidden="true"></i> Falar com as especialistas
           </a>
@@ -231,12 +301,15 @@
 
       <div class="servicos-grid">
 
-        <div class="servico-card fade-in">
-          <div class="servico-icone"><i class="fas fa-file-contract" aria-hidden="true"></i></div>
-          <span class="servico-categoria">Licenciamento</span>
-          <h3>Licenciamento ambiental completo</h3>
-          <p>Licença Prévia (LP), Licença de Instalação (LI) e Licença de Operação (LO). Acompanhamento de todo o processo junto aos órgãos competentes.</p>
-        </div>
+        <a href="licenciamento-ambiental.html" style="display: contents; text-decoration: none;">
+          <div class="servico-card fade-in">
+            <div class="servico-icone"><i class="fas fa-file-contract" aria-hidden="true"></i></div>
+            <span class="servico-categoria">Licenciamento</span>
+            <h3>Licenciamento ambiental completo</h3>
+            <p>Licença Prévia (LP), Licença de Instalação (LI) e Licença de Operação (LO). Acompanhamento de todo o processo junto aos órgãos competentes.</p>
+            <span style="color: var(--verde-claro); font-weight: 600; font-size: 0.85rem; margin-top: 10px; display: inline-block;">Saiba mais &rarr;</span>
+          </div>
+        </a>
 
         <div class="servico-card fade-in">
           <div class="servico-icone"><i class="fas fa-rotate" aria-hidden="true"></i></div>
@@ -252,33 +325,45 @@
           <p>Solicitação de Licença Simplificada e Dispensa de Licença Ambiental para atividades enquadradas nos critérios legais.</p>
         </div>
 
-        <div class="servico-card fade-in">
-          <div class="servico-icone"><i class="fas fa-recycle" aria-hidden="true"></i></div>
-          <span class="servico-categoria">Resíduos</span>
-          <h3>CADRI (CETESB)</h3>
-          <p>Solicitação do Certificado de Movimentação de Resíduos de Interesse Ambiental junto à CETESB com toda a documentação necessária.</p>
-        </div>
+        <a href="gestao-residuos.html" style="display: contents; text-decoration: none;">
+          <div class="servico-card fade-in">
+            <div class="servico-icone"><i class="fas fa-recycle" aria-hidden="true"></i></div>
+            <span class="servico-categoria">Resíduos</span>
+            <h3>CADRI (CETESB)</h3>
+            <p>Solicitação do Certificado de Movimentação de Resíduos de Interesse Ambiental junto à CETESB com toda a documentação necessária.</p>
+            <span style="color: var(--verde-claro); font-weight: 600; font-size: 0.85rem; margin-top: 10px; display: inline-block;">Saiba mais &rarr;</span>
+          </div>
+        </a>
 
-        <div class="servico-card fade-in">
-          <div class="servico-icone"><i class="fas fa-truck" aria-hidden="true"></i></div>
-          <span class="servico-categoria">Resíduos</span>
-          <h3>SIGOR MTR</h3>
-          <p>Cadastro e gestão de Manifestos de Transporte de Resíduos no sistema SIGOR/MTR do CETESB com conformidade total.</p>
-        </div>
+        <a href="gestao-residuos.html" style="display: contents; text-decoration: none;">
+          <div class="servico-card fade-in">
+            <div class="servico-icone"><i class="fas fa-truck" aria-hidden="true"></i></div>
+            <span class="servico-categoria">Resíduos</span>
+            <h3>SIGOR MTR</h3>
+            <p>Cadastro e gestão de Manifestos de Transporte de Resíduos no sistema SIGOR/MTR do CETESB com conformidade total.</p>
+            <span style="color: var(--verde-claro); font-weight: 600; font-size: 0.85rem; margin-top: 10px; display: inline-block;">Saiba mais &rarr;</span>
+          </div>
+        </a>
 
-        <div class="servico-card fade-in">
-          <div class="servico-icone"><i class="fas fa-landmark" aria-hidden="true"></i></div>
-          <span class="servico-categoria">IBAMA</span>
-          <h3>Cadastro e regularização no IBAMA</h3>
-          <p>Cadastro Técnico Federal, emissão de Certificado de Regularidade, regularização de taxas e atendimento a notificações e multas.</p>
-        </div>
+        <a href="servicos-ibama.html" style="display: contents; text-decoration: none;">
+          <div class="servico-card fade-in">
+            <div class="servico-icone"><i class="fas fa-landmark" aria-hidden="true"></i></div>
+            <span class="servico-categoria">IBAMA</span>
+            <h3>Cadastro e regularização no IBAMA</h3>
+            <p>Cadastro Técnico Federal, emissão de Certificado de Regularidade, regularização de taxas e atendimento a notificações e multas.</p>
+            <span style="color: var(--verde-claro); font-weight: 600; font-size: 0.85rem; margin-top: 10px; display: inline-block;">Saiba mais &rarr;</span>
+          </div>
+        </a>
 
-        <div class="servico-card fade-in">
-          <div class="servico-icone"><i class="fas fa-file-lines" aria-hidden="true"></i></div>
-          <span class="servico-categoria">IBAMA</span>
-          <h3>RAPP — Relatório anual ao IBAMA</h3>
-          <p>Elaboração e entrega do Relatório Anual de Atividades Potencialmente Poluidoras e Utilizadoras de Recursos Ambientais.</p>
-        </div>
+        <a href="servicos-ibama.html" style="display: contents; text-decoration: none;">
+          <div class="servico-card fade-in">
+            <div class="servico-icone"><i class="fas fa-file-lines" aria-hidden="true"></i></div>
+            <span class="servico-categoria">IBAMA</span>
+            <h3>RAPP — Relatório anual ao IBAMA</h3>
+            <p>Elaboração e entrega do Relatório Anual de Atividades Potencialmente Poluidoras e Utilizadoras de Recursos Ambientais.</p>
+            <span style="color: var(--verde-claro); font-weight: 600; font-size: 0.85rem; margin-top: 10px; display: inline-block;">Saiba mais &rarr;</span>
+          </div>
+        </a>
 
         <div class="servico-card fade-in">
           <div class="servico-icone"><i class="fas fa-shield-halved" aria-hidden="true"></i></div>
@@ -287,12 +372,15 @@
           <p>Elaboração do Programa de Gerenciamento de Riscos conforme exigências da norma P4.261 da CETESB.</p>
         </div>
 
-        <div class="servico-card fade-in">
-          <div class="servico-icone"><i class="fas fa-trash-can-arrow-up" aria-hidden="true"></i></div>
-          <span class="servico-categoria">Resíduos</span>
-          <h3>PGRS — Plano de gerenciamento de resíduos</h3>
-          <p>Elaboração do Plano de Gerenciamento de Resíduos Sólidos conforme a Política Nacional de Resíduos Sólidos (Lei 12.305).</p>
-        </div>
+        <a href="gestao-residuos.html" style="display: contents; text-decoration: none;">
+          <div class="servico-card fade-in">
+            <div class="servico-icone"><i class="fas fa-trash-can-arrow-up" aria-hidden="true"></i></div>
+            <span class="servico-categoria">Resíduos</span>
+            <h3>PGRS – Plano de Gerenciamento de Resíduos Sólidos</h3>
+            <p>Elaboração do Plano de Gerenciamento de Resíduos Sólidos conforme a Política Nacional de Resíduos Sólidos (Lei 12.305).</p>
+            <span style="color: var(--verde-claro); font-weight: 600; font-size: 0.85rem; margin-top: 10px; display: inline-block;">Saiba mais &rarr;</span>
+          </div>
+        </a>
 
         <div class="servico-card fade-in">
           <div class="servico-icone"><i class="fas fa-map-location-dot" aria-hidden="true"></i></div>
@@ -361,33 +449,21 @@
         </button>
         <div class="carrossel-track-outer">
           <div class="carrossel-track" id="galeriaTrack">
-            <div class="carrossel-slide"><img src="images/galeria/galeria-01.jpg" alt="Trabalho em campo 1" loading="lazy"></div>
-            <div class="carrossel-slide"><img src="images/galeria/galeria-02.jpg" alt="Trabalho em campo 2" loading="lazy"></div>
-            <div class="carrossel-slide"><img src="images/galeria/galeria-03.jpg" alt="Trabalho em campo 3" loading="lazy"></div>
-            <div class="carrossel-slide"><img src="images/galeria/galeria-04.jpg" alt="Trabalho em campo 4" loading="lazy"></div>
-            <div class="carrossel-slide"><img src="images/galeria/galeria-05.jpg" alt="Trabalho em campo 5" loading="lazy"></div>
-            <div class="carrossel-slide"><img src="images/galeria/galeria-06.jpg" alt="Trabalho em campo 6" loading="lazy"></div>
-            <div class="carrossel-slide"><img src="images/galeria/galeria-07.jpg" alt="Trabalho em campo 7" loading="lazy"></div>
-            <div class="carrossel-slide"><img src="images/galeria/galeria-08.jpg" alt="Trabalho em campo 8" loading="lazy"></div>
-            <div class="carrossel-slide"><img src="images/galeria/galeria-09.jpg" alt="Trabalho em campo 9" loading="lazy"></div>
-            <div class="carrossel-slide"><img src="images/galeria/galeria-10.jpg" alt="Trabalho em campo 10" loading="lazy"></div>
-            <div class="carrossel-slide"><img src="images/galeria/galeria-11.jpg" alt="Trabalho em campo 11" loading="lazy"></div>
-            <div class="carrossel-slide"><img src="images/galeria/galeria-12.jpg" alt="Trabalho em campo 12" loading="lazy"></div>
-            <div class="carrossel-slide"><img src="images/galeria/galeria-13.jpg" alt="Trabalho em campo 13" loading="lazy"></div>
-            <div class="carrossel-slide"><img src="images/galeria/galeria-14.jpg" alt="Trabalho em campo 14" loading="lazy"></div>
-            <div class="carrossel-slide"><img src="images/galeria/galeria-15.jpg" alt="Trabalho em campo 15" loading="lazy"></div>
-            <div class="carrossel-slide"><img src="images/galeria/galeria-16.jpg" alt="Trabalho em campo 16" loading="lazy"></div>
-            <div class="carrossel-slide"><img src="images/galeria/galeria-17.jpg" alt="Trabalho em campo 17" loading="lazy"></div>
-            <div class="carrossel-slide"><img src="images/galeria/galeria-18.jpg" alt="Trabalho em campo 18" loading="lazy"></div>
-            <div class="carrossel-slide"><img src="images/galeria/galeria-19.jpg" alt="Trabalho em campo 19" loading="lazy"></div>
-            <div class="carrossel-slide"><img src="images/galeria/galeria-20.jpg" alt="Trabalho em campo 20" loading="lazy"></div>
-            <div class="carrossel-slide"><img src="images/galeria/galeria-21.jpg" alt="Trabalho em campo 21" loading="lazy"></div>
-            <div class="carrossel-slide"><img src="images/galeria/galeria-22.jpg" alt="Trabalho em campo 22" loading="lazy"></div>
-            <div class="carrossel-slide"><img src="images/galeria/galeria-23.jpg" alt="Trabalho em campo 23" loading="lazy"></div>
-            <div class="carrossel-slide"><img src="images/galeria/galeria-24.jpg" alt="Trabalho em campo 24" loading="lazy"></div>
-            <div class="carrossel-slide"><img src="images/galeria/galeria-25.jpg" alt="Trabalho em campo 25" loading="lazy"></div>
-            <div class="carrossel-slide"><img src="images/galeria/galeria-26.jpg" alt="Trabalho em campo 26" loading="lazy"></div>
-            <div class="carrossel-slide"><img src="images/galeria/galeria-27.jpg" alt="Trabalho em campo 27" loading="lazy"></div>
+            <div class="carrossel-slide"><img src="images/galeria/Fotos%20da%20Galeria%20(1).jpg" alt="Fotos da Galeria 1" loading="lazy"></div>
+            <div class="carrossel-slide"><img src="images/galeria/Fotos%20da%20Galeria%20(1).jpeg" alt="Fotos da Galeria 2" loading="lazy"></div>
+            <div class="carrossel-slide"><img src="images/galeria/Fotos%20da%20Galeria%20(2).jpg" alt="Fotos da Galeria 3" loading="lazy"></div>
+            <div class="carrossel-slide"><img src="images/galeria/Fotos%20da%20Galeria%20(2).jpeg" alt="Fotos da Galeria 4" loading="lazy"></div>
+            <div class="carrossel-slide"><img src="images/galeria/Fotos%20da%20Galeria%20(3).jpg" alt="Fotos da Galeria 5" loading="lazy"></div>
+            <div class="carrossel-slide"><img src="images/galeria/Fotos%20da%20Galeria%20(3).jpeg" alt="Fotos da Galeria 6" loading="lazy"></div>
+            <div class="carrossel-slide"><img src="images/galeria/Fotos%20da%20Galeria%20(4).jpg" alt="Fotos da Galeria 7" loading="lazy"></div>
+            <div class="carrossel-slide"><img src="images/galeria/Fotos%20da%20Galeria%20(4).jpeg" alt="Fotos da Galeria 8" loading="lazy"></div>
+            <div class="carrossel-slide"><img src="images/galeria/Fotos%20da%20Galeria%20(5).jpg" alt="Fotos da Galeria 9" loading="lazy"></div>
+            <div class="carrossel-slide"><img src="images/galeria/Fotos%20da%20Galeria%20(5).jpeg" alt="Fotos da Galeria 10" loading="lazy"></div>
+            <div class="carrossel-slide"><img src="images/galeria/Fotos%20da%20Galeria%20(6).jpg" alt="Fotos da Galeria 11" loading="lazy"></div>
+            <div class="carrossel-slide"><img src="images/galeria/Fotos%20da%20Galeria%20(6).jpeg" alt="Fotos da Galeria 12" loading="lazy"></div>
+            <div class="carrossel-slide"><img src="images/galeria/Fotos%20da%20Galeria%20(7).jpg" alt="Fotos da Galeria 13" loading="lazy"></div>
+            <div class="carrossel-slide"><img src="images/galeria/Fotos%20da%20Galeria%20(7).jpeg" alt="Fotos da Galeria 14" loading="lazy"></div>
+            <div class="carrossel-slide"><img src="images/galeria/Fotos%20da%20Galeria%20(8).jpeg" alt="Fotos da Galeria 15" loading="lazy"></div>
           </div>
         </div>
         <button class="carrossel-btn carrossel-btn-next" id="galeriaProximo" aria-label="Próxima imagem">
@@ -590,24 +666,24 @@
         <p>Indústrias, empresas de serviços e atividades rurais que contam com a Conectus para conformidade ambiental</p>
       </div>
       <div class="clientes-grid fade-in">
-        <div class="cliente-logo"><img src="images/clientes/alambari.png" alt="Alambari Alimentos" loading="lazy"></div>
-        <div class="cliente-logo"><img src="images/clientes/antonella.png" alt="Antonella Salgados" loading="lazy"></div>
-        <div class="cliente-logo"><img src="images/clientes/arete.jpg" alt="Arete" loading="lazy"></div>
-        <div class="cliente-logo"><img src="images/clientes/bs-zoia.png" alt="BS Zoia" loading="lazy"></div>
-        <div class="cliente-logo"><img src="images/clientes/df-metais.jpeg" alt="DF Soluções em Metais" loading="lazy"></div>
-        <div class="cliente-logo"><img src="images/clientes/dn-servicos.png" alt="DN Serviços Ambientais" loading="lazy"></div>
-        <div class="cliente-logo"><img src="images/clientes/engert.png" alt="Engert" loading="lazy"></div>
-        <div class="cliente-logo"><img src="images/clientes/eyeclean.jpg" alt="Eyeclean" loading="lazy"></div>
-        <div class="cliente-logo"><img src="images/clientes/ff-caldeiraria.png" alt="FF Caldeiraria" loading="lazy"></div>
-        <div class="cliente-logo"><img src="images/clientes/hassegawa.png" alt="Hassegawa" loading="lazy"></div>
-        <div class="cliente-logo"><img src="images/clientes/intercuf.png" alt="Intercuf" loading="lazy"></div>
-        <div class="cliente-logo"><img src="images/clientes/mantrafo.jpg" alt="Mantrafo" loading="lazy"></div>
-        <div class="cliente-logo"><img src="images/clientes/minabela.jpg" alt="Minabela" loading="lazy"></div>
-        <div class="cliente-logo"><img src="images/clientes/montecnica.png" alt="Montécnica" loading="lazy"></div>
-        <div class="cliente-logo"><img src="images/clientes/nuxem.png" alt="Nuxem" loading="lazy"></div>
-        <div class="cliente-logo"><img src="images/clientes/renova.jpeg" alt="Renova" loading="lazy"></div>
-        <div class="cliente-logo"><img src="images/clientes/rtt-esquadrias.png" alt="RTT Esquadrias de Alumínio e Vidros" loading="lazy"></div>
-        <div class="cliente-logo"><img src="images/clientes/zoom-tintas.png" alt="Zoom Tintas" loading="lazy"></div>
+        <div class="cliente-logo"><img src="images/clientes/1.png" alt="Cliente" loading="lazy"></div>
+        <div class="cliente-logo"><img src="images/clientes/2.png" alt="Cliente" loading="lazy"></div>
+        <div class="cliente-logo"><img src="images/clientes/3.png" alt="Cliente" loading="lazy"></div>
+        <div class="cliente-logo"><img src="images/clientes/4.png" alt="Cliente" loading="lazy"></div>
+        <div class="cliente-logo"><img src="images/clientes/5.png" alt="Cliente" loading="lazy"></div>
+        <div class="cliente-logo"><img src="images/clientes/6.png" alt="Cliente" loading="lazy"></div>
+        <div class="cliente-logo"><img src="images/clientes/7.png" alt="Cliente" loading="lazy"></div>
+        <div class="cliente-logo"><img src="images/clientes/8.png" alt="Cliente" loading="lazy"></div>
+        <div class="cliente-logo"><img src="images/clientes/9.png" alt="Cliente" loading="lazy"></div>
+        <div class="cliente-logo"><img src="images/clientes/10.png" alt="Cliente" loading="lazy"></div>
+        <div class="cliente-logo"><img src="images/clientes/11.png" alt="Cliente" loading="lazy"></div>
+        <div class="cliente-logo"><img src="images/clientes/12.png" alt="Cliente" loading="lazy"></div>
+        <div class="cliente-logo"><img src="images/clientes/13.png" alt="Cliente" loading="lazy"></div>
+        <div class="cliente-logo"><img src="images/clientes/14.png" alt="Cliente" loading="lazy"></div>
+        <div class="cliente-logo"><img src="images/clientes/15.png" alt="Cliente" loading="lazy"></div>
+        <div class="cliente-logo"><img src="images/clientes/16.png" alt="Cliente" loading="lazy"></div>
+        <div class="cliente-logo"><img src="images/clientes/17.png" alt="Cliente" loading="lazy"></div>
+        <div class="cliente-logo"><img src="images/clientes/18.png" alt="Cliente" loading="lazy"></div>
       </div>
     </div>
   </section>
@@ -713,6 +789,20 @@
     </div>
   </section>
 
+  <!-- ===== CTA BLOG ===== -->
+  <section class="blog-cta-banda">
+    <div class="container blog-cta-banda-conteudo">
+      <div class="blog-cta-texto">
+        <span class="etiqueta claro">Conteúdo especializado</span>
+        <h2>Aprenda mais no nosso blog</h2>
+        <p>Artigos sobre licenciamento ambiental, gestão de resíduos e conformidade com o IBAMA para manter sua empresa sempre em dia.</p>
+      </div>
+      <a href="https://blog.conectusambiental.com.br/" class="btn-primario">
+        <i class="fas fa-arrow-right" aria-hidden="true"></i> Visitar o blog
+      </a>
+    </div>
+  </section>
+
   <!-- ===== CONTATO ===== -->
   <section id="contato" class="contato">
     <div class="container">
@@ -758,7 +848,7 @@
             <div class="contato-icone"><i class="fas fa-clock" aria-hidden="true"></i></div>
             <div>
               <h3>Horário de atendimento</h3>
-              <p>Segunda a sexta: 8h às 18h</p>
+              <p>Segunda a sexta: 8h às 17h</p>
             </div>
           </div>
 
@@ -780,13 +870,11 @@
 
         </div>
 
-        <!-- Formulário de contato -->
-        <!-- IMPORTANTE: Para ativar o envio por email, crie uma conta gratuita em formspree.io,
-             crie um novo formulário e substitua "SEU_ID_AQUI" pelo ID gerado. -->
+        <!-- Formulário de contato — envio via WhatsApp -->
         <div class="contato-form-box fade-in">
-          <h3><i class="fas fa-paper-plane" aria-hidden="true"></i> Envie sua mensagem</h3>
-          <p class="form-subtitulo">Preencha o formulário e retornamos em até 24h</p>
-          <form id="contatoForm" action="https://formspree.io/f/SEU_ID_AQUI" method="POST" novalidate>
+          <h3><i class="fab fa-whatsapp" aria-hidden="true"></i> Envie sua mensagem</h3>
+          <p class="form-subtitulo">Preencha o formulário e envie direto pelo WhatsApp</p>
+          <form id="contatoForm" novalidate>
             <div class="campo-grupo">
               <label for="nome">Nome completo <span class="obrigatorio">*</span></label>
               <input type="text" id="nome" name="nome" required placeholder="Seu nome">
@@ -810,13 +898,13 @@
               <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Descreva a necessidade da sua empresa..."></textarea>
             </div>
             <button type="submit" class="btn-primario btn-form" id="btnEnviar">
-              <i class="fas fa-paper-plane" aria-hidden="true"></i> Enviar mensagem
+              <i class="fab fa-whatsapp" aria-hidden="true"></i> Enviar pelo WhatsApp
             </button>
             <div class="form-sucesso" id="formSucesso" style="display:none" role="alert">
-              <i class="fas fa-check-circle" aria-hidden="true"></i> Mensagem enviada! Entraremos em contato em breve.
+              <i class="fas fa-check-circle" aria-hidden="true"></i> WhatsApp aberto com sua mensagem! Aguardamos seu contato.
             </div>
             <div class="form-erro" id="formErro" style="display:none" role="alert">
-              <i class="fas fa-exclamation-circle" aria-hidden="true"></i> Falha ao enviar. Tente pelo WhatsApp ou e-mail.
+              <i class="fas fa-exclamation-circle" aria-hidden="true"></i> Preencha todos os campos obrigatórios (*).
             </div>
           </form>
         </div>
@@ -825,21 +913,6 @@
     </div>
   </section>
 
-  <!-- ===== MAPA ===== -->
-  <section class="mapa-secao" aria-label="Localização da Conectus Soluções Ambientais">
-    <div class="mapa-topo">
-      <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-      <span>Rua Ítalo Bordini, 1040 — Jardim do Lago, Valinhos/SP</span>
-    </div>
-    <div class="mapa-container">
-      <iframe
-        src="https://maps.google.com/maps?q=Rua+Italo+Bordini+1040+Jardim+do+Lago+Valinhos+SP+Brasil&t=&z=16&ie=UTF8&iwloc=&output=embed"
-        width="100%" height="420" style="border:0;" allowfullscreen
-        loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        title="Localização Conectus Soluções Ambientais — Valinhos/SP">
-      </iframe>
-    </div>
-  </section>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
@@ -862,20 +935,7 @@
           </div>
         </div>
 
-        <div class="footer-links-col">
-          <h4>Navegação</h4>
-          <nav aria-label="Links do rodapé">
-            <a href="#inicio">Início</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#galeria">Galeria</a>
-            <a href="#depoimentos">Depoimentos</a>
-            <a href="#faq">FAQ</a>
-            <a href="#contato">Contato</a>
-          </nav>
-        </div>
-
-        <div class="footer-links-col">
+<div class="footer-links-col">
           <h4>Soluções</h4>
           <nav aria-label="Soluções">
             <a href="licenciamento-ambiental.html">Licenciamento Ambiental</a>
@@ -1057,36 +1117,43 @@
       });
     });
 
-    // ===== FORMULÁRIO (FORMSPREE AJAX) =====
+    // ===== FORMULÁRIO — ENVIO VIA WHATSAPP =====
     const contatoForm = document.getElementById('contatoForm');
     if (contatoForm) {
-      contatoForm.addEventListener('submit', async (e) => {
+      contatoForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        const btnEnviar = document.getElementById('btnEnviar');
         const sucesso = document.getElementById('formSucesso');
-        const erro = document.getElementById('formErro');
+        const erro    = document.getElementById('formErro');
         sucesso.style.display = 'none';
-        erro.style.display = 'none';
-        btnEnviar.disabled = true;
-        btnEnviar.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
-        try {
-          const res = await fetch(contatoForm.action, {
-            method: 'POST',
-            body: new FormData(contatoForm),
-            headers: { 'Accept': 'application/json' }
-          });
-          if (res.ok) {
-            contatoForm.reset();
-            sucesso.style.display = 'flex';
-            btnEnviar.style.display = 'none';
-          } else {
-            throw new Error('erro');
-          }
-        } catch {
+        erro.style.display    = 'none';
+
+        const nome     = document.getElementById('nome').value.trim();
+        const empresa  = document.getElementById('empresa').value.trim();
+        const telefone = document.getElementById('telefone').value.trim();
+        const email    = document.getElementById('email').value.trim();
+        const mensagem = document.getElementById('mensagem').value.trim();
+
+        if (!nome || !telefone || !email || !mensagem) {
           erro.style.display = 'flex';
-          btnEnviar.disabled = false;
-          btnEnviar.innerHTML = '<i class="fas fa-paper-plane"></i> Enviar mensagem';
+          return;
         }
+
+        let texto = `Olá! Entro em contato pelo formulário do site da Conectus.\n\n`;
+        texto += `*Nome:* ${nome}\n`;
+        if (empresa) texto += `*Empresa:* ${empresa}\n`;
+        texto += `*Telefone:* ${telefone}\n`;
+        texto += `*E-mail:* ${email}\n\n`;
+        texto += `*Mensagem:*\n${mensagem}`;
+
+        window.open(
+          `https://wa.me/5519991110898?text=${encodeURIComponent(texto)}`,
+          '_blank',
+          'noopener,noreferrer'
+        );
+
+        contatoForm.reset();
+        sucesso.style.display = 'flex';
+        document.getElementById('btnEnviar').style.display = 'none';
       });
     }
 

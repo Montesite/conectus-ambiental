@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5C3T2ZNC');</script>
+  <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Serviços IBAMA — Conectus Engenharia Ambiental</title>
@@ -12,6 +19,7 @@
   <meta property="og:description" content="CTF, Certificado de Regularidade, RAPP e regularização de pendências junto ao IBAMA.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://conectusambiental.com.br/servicos-ibama.html">
+  <link rel="canonical" href="https://conectusambiental.com.br/servicos-ibama.html">
   <meta property="og:image" content="images/og-image.png">
   <meta property="og:locale" content="pt_BR">
 
@@ -25,7 +33,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5C3T2ZNC"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
+  <div id="scroll-progress" aria-hidden="true"></div>
   <header id="header">
     <div class="header-container">
       <a href="index.html#inicio" class="logo" aria-label="Conectus — Início">
@@ -34,11 +47,19 @@
       <nav class="desktop-nav" aria-label="Navegação principal">
         <a href="index.html#inicio">Início</a>
         <a href="index.html#sobre">Sobre</a>
-        <a href="index.html#servicos">Serviços</a>
+        <div class="nav-dropdown">
+          <a href="index.html#servicos">Serviços <i class="fas fa-chevron-down" style="font-size: 0.8em; margin-left: 4px;"></i></a>
+          <div class="dropdown-menu">
+            <a href="licenciamento-ambiental.html">Licenciamento Ambiental</a>
+            <a href="servicos-ibama.html">Serviços IBAMA</a>
+            <a href="gestao-residuos.html">Gestão de Resíduos</a>
+          </div>
+        </div>
         <a href="index.html#galeria">Galeria</a>
         <a href="index.html#depoimentos">Depoimentos</a>
         <a href="index.html#faq">FAQ</a>
         <a href="index.html#contato">Contato</a>
+        <a href="https://blog.conectusambiental.com.br/">Blog</a>
       </nav>
       <a href="https://wa.me/5519991110898?text=Ol%C3%A1%2C%20gostaria%20de%20ajuda%20com%20servi%C3%A7os%20do%20IBAMA." class="header-whatsapp" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-whatsapp" aria-hidden="true"></i> Fale conosco
@@ -52,40 +73,26 @@
   <nav id="navMenu" class="mobile-nav" aria-label="Menu mobile" aria-hidden="true">
     <a href="index.html#inicio" class="nav-link">Início</a>
     <a href="index.html#sobre" class="nav-link">Sobre</a>
-    <a href="index.html#servicos" class="nav-link">Serviços</a>
+    <a href="index.html#servicos" class="nav-link">Serviços Gerais</a>
+    <a href="licenciamento-ambiental.html" class="nav-link sub-link" style="padding-left: 20px; font-size: 0.9em; color: var(--verde-claro);">— Licenciamento</a>
+    <a href="servicos-ibama.html" class="nav-link sub-link" style="padding-left: 20px; font-size: 0.9em; color: var(--verde-claro);">— Serviços IBAMA</a>
+    <a href="gestao-residuos.html" class="nav-link sub-link" style="padding-left: 20px; font-size: 0.9em; color: var(--verde-claro);">— Gestão de Resíduos</a>
     <a href="index.html#galeria" class="nav-link">Galeria</a>
     <a href="index.html#depoimentos" class="nav-link">Depoimentos</a>
     <a href="index.html#faq" class="nav-link">FAQ</a>
     <a href="index.html#contato" class="nav-link">Contato</a>
+    <a href="https://blog.conectusambiental.com.br/" class="nav-link">Blog</a>
     <a href="https://wa.me/5519991110898" class="nav-link nav-wpp" target="_blank" rel="noopener noreferrer">
       <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
     </a>
   </nav>
-
-  <section class="hero" style="min-height: 70vh; padding: 140px 0 80px;">
-    <div class="hero-overlay" aria-hidden="true"></div>
-    <div class="hero-conteudo">
-      <div class="hero-badge"><i class="fas fa-landmark" aria-hidden="true"></i> Serviços IBAMA</div>
-      <h1 style="color:#fff; font-family: var(--fonte-titulo); font-size: clamp(2rem,5vw,3.5rem); margin: 12px 0;">Regularização junto ao IBAMA</h1>
-      <h2>CTF, Certificado de Regularidade, RAPP e mais</h2>
-      <p>Cuidamos de todo o ciclo de obrigações federais: cadastro, taxas, relatórios anuais e atendimento de notificações. Sua empresa em conformidade, sem riscos de multa.</p>
-      <div class="hero-botoes">
-        <a href="https://wa.me/5519991110898?text=Ol%C3%A1%2C%20gostaria%20de%20ajuda%20com%20servi%C3%A7os%20do%20IBAMA." class="btn-primario" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-whatsapp" aria-hidden="true"></i> Resolver minha situação no IBAMA
-        </a>
-        <a href="index.html#contato" class="btn-contorno">
-          <i class="fas fa-envelope" aria-hidden="true"></i> Entrar em contato
-        </a>
-      </div>
-    </div>
-  </section>
 
   <section class="servicos">
     <div class="container">
       <div class="cabecalho-secao claro fade-in">
         <span class="etiqueta claro">O que fazemos</span>
         <h2>Atendimento completo IBAMA</h2>
-        <p>Atuamos em todas as obrigações federais que envolvem o IBAMA</p>
+        <p>Atuamos na regularização completa para seu empreendimento.</p>
       </div>
 
       <div class="servicos-grid">
@@ -125,13 +132,6 @@
           <p>Análise técnica, elaboração de defesa, recursos e impugnação de autos de infração ambiental lavrados pelo IBAMA.</p>
         </div>
 
-        <div class="servico-card fade-in">
-          <div class="servico-icone"><i class="fas fa-shield" aria-hidden="true"></i></div>
-          <span class="servico-categoria">Produtos Controlados</span>
-          <h3>Licenciamento de Produtos Controlados</h3>
-          <p>Suporte ao licenciamento de produtos controlados pelo Exército, Polícia Federal e Polícia Civil — frequentemente integrado ao processo IBAMA.</p>
-        </div>
-
       </div>
     </div>
   </section>
@@ -144,7 +144,7 @@
           <h2>Pendências no IBAMA travam negócios</h2>
           <p>O Certificado de Regularidade é exigido em <strong>licitações, financiamentos públicos, contratos com órgãos públicos</strong> e diversas outras frentes comerciais. Estar em débito ou irregular significa perda direta de oportunidade.</p>
           <p>A Conectus identifica todas as pendências da sua empresa, regulariza taxas em atraso, atualiza cadastros, entrega o RAPP e responde notificações com fundamentação técnica.</p>
-          <p>Tudo conduzido por engenheiras especialistas, com comunicação transparente e prazos respeitados.</p>
+          <p>Tudo conduzido por equipe especializada, com comunicação transparente e prazos respeitados.</p>
           <a href="https://wa.me/5519991110898?text=Ol%C3%A1%2C%20gostaria%20de%20ajuda%20com%20servi%C3%A7os%20do%20IBAMA." class="btn-primario" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-whatsapp" aria-hidden="true"></i> Verificar minha situação
           </a>
@@ -162,8 +162,8 @@
           </div>
           <div class="mvv-card destaque fade-in">
             <div class="mvv-icone"><i class="fas fa-shield-halved" aria-hidden="true"></i></div>
-            <h3>Manutenção</h3>
-            <p>Acompanhamento contínuo para que sua empresa nunca volte a ficar irregular.</p>
+            <h3>Acompanhamento</h3>
+            <p>Monitoramento contínuo para que sua empresa não volte a ficar irregular.</p>
           </div>
         </div>
       </div>
@@ -183,7 +183,7 @@
             <i class="fas fa-chevron-down faq-chevron" aria-hidden="true"></i>
           </button>
           <div class="faq-resposta" hidden>
-            <p>Empresas que exercem atividades classificadas como potencialmente poluidoras ou utilizadoras de recursos ambientais — listadas no Anexo VIII da Lei 6.938/81 — devem se inscrever no Cadastro Técnico Federal e manter o cadastro atualizado.</p>
+            <p>Empresas que exercem atividades classificadas como potencialmente poluidoras ou utilizadoras de recursos ambientais, listadas na Instrução Normativa nº 13, de 23 de agosto de 2021, devem se inscrever no Cadastro Técnico Federal e manter o cadastro atualizado.</p>
           </div>
         </div>
         <div class="faq-item">
@@ -217,10 +217,23 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-conteudo">
+
         <div class="footer-marca">
-          <img src="images/logo.png" alt="Conectus Engenharia Ambiental" class="footer-logo" loading="lazy">
+          <img src="images/logo.png" alt="Conectus Soluções Ambientais" class="footer-logo" loading="lazy">
           <p>Consultoria especializada em licenciamento ambiental. Soluções responsáveis para sua empresa.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/conectus.ambiental/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/conectus-sa-b652531ab/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/conectus.ambiental" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
+
         <div class="footer-links-col">
           <h4>Soluções</h4>
           <nav aria-label="Soluções">
@@ -229,6 +242,7 @@
             <a href="gestao-residuos.html">Gestão de Resíduos</a>
           </nav>
         </div>
+
         <div class="footer-contato-col">
           <h4>Contato</h4>
           <p><i class="fas fa-phone" aria-hidden="true"></i><a href="tel:+5519991110898">(19) 99111-0898</a></p>
@@ -236,6 +250,7 @@
           <p><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:contato@conectusambiental.com">contato@conectusambiental.com</a></p>
           <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i>Valinhos/SP</p>
         </div>
+
       </div>
       <div class="footer-base">
         <p>© 2025 Conectus Engenharia Ambiental · CNPJ 39.810.641/0001-47 · Valinhos/SP</p>
@@ -247,7 +262,27 @@
     <i class="fab fa-whatsapp" aria-hidden="true"></i>
   </a>
 
+  <button id="voltarTopo" class="voltar-topo" aria-label="Voltar ao topo da página">
+    <i class="fas fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
   <script>
+    // ===== HEADER SCROLL =====
+    const header = document.getElementById('header');
+    const progressBar = document.getElementById('scroll-progress');
+    const btnTopo = document.getElementById('voltarTopo');
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY;
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      if (progressBar) progressBar.style.width = (scrolled / total * 100) + '%';
+      header.classList.toggle('rolado', scrolled > 60);
+      if (btnTopo) btnTopo.classList.toggle('visivel', scrolled > 400);
+    }, { passive: true });
+    if (btnTopo) {
+      btnTopo.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    }
+
+    // ===== MENU MOBILE =====
     const menuToggle = document.getElementById('menuToggle');
     const navMenu = document.getElementById('navMenu');
     if (menuToggle && navMenu) {
@@ -257,7 +292,17 @@
         menuToggle.setAttribute('aria-expanded', String(aberto));
         navMenu.setAttribute('aria-hidden', String(!aberto));
       });
+      navMenu.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('aberto');
+          menuToggle.classList.remove('ativo');
+          menuToggle.setAttribute('aria-expanded', 'false');
+          navMenu.setAttribute('aria-hidden', 'true');
+        });
+      });
     }
+
+    // ===== FAQ =====
     document.querySelectorAll('.faq-pergunta').forEach(btn => {
       btn.addEventListener('click', () => {
         const item = btn.closest('.faq-item');
@@ -275,6 +320,8 @@
         }
       });
     });
+
+    // ===== OBSERVER =====
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visivel'); observer.unobserve(e.target); } });
     }, { threshold: 0.1 });

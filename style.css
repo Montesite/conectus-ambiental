@@ -177,13 +177,14 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
-  background: transparent;
-  transition: background var(--transicao), box-shadow var(--transicao), backdrop-filter var(--transicao);
+  background: var(--branco);
+  box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+  transition: all var(--transicao);
 }
 #header.rolado {
-  background: rgba(28, 52, 97, 0.96);
-  backdrop-filter: blur(14px);
-  box-shadow: 0 2px 24px rgba(0,0,0,0.22);
+  padding: 5px 0;
+  background: var(--branco);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
 }
 
 .header-container {
@@ -213,7 +214,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.82);
+  color: var(--azul);
   position: relative;
   padding-bottom: 4px;
   transition: color var(--transicao);
@@ -227,10 +228,55 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transition: width var(--transicao);
 }
 .desktop-nav a:hover,
-.desktop-nav a.ativo { color: var(--branco); }
+.desktop-nav a.ativo { color: var(--verde); }
 .desktop-nav a:hover::after,
 .desktop-nav a.ativo::after { width: 100%; }
 
+/* Dropdown */
+.nav-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--branco);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  padding: 10px 0;
+  min-width: 240px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all var(--transicao);
+  z-index: 100;
+  margin-top: 15px;
+}
+.nav-dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  color: var(--texto) !important;
+  font-family: var(--fonte-texto);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: normal;
+}
+.dropdown-menu a::after {
+  display: none; /* Remove underline do dropdown */
+}
+.dropdown-menu a:hover {
+  background: rgba(45, 184, 75, 0.08);
+  color: var(--verde) !important;
+  padding-left: 24px;
+}
 .header-whatsapp {
   display: flex;
   align-items: center;
@@ -264,7 +310,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   display: block;
   width: 26px;
   height: 2px;
-  background: var(--branco);
+  background: var(--azul);
   border-radius: 2px;
   transition: transform 0.35s ease, opacity 0.35s ease;
 }
@@ -325,8 +371,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   padding: 120px 0 80px;
   background:
     linear-gradient(135deg, rgba(28, 52, 97, 0.75) 0%, rgba(28, 52, 97, 0.55) 100%),
-    url('images/bg-hero.jpg')
-    center 22% / cover no-repeat;
+    url('images/bg-hero.png')
+    center center / cover no-repeat;
   background-attachment: scroll, scroll;
 }
 
@@ -1513,6 +1559,33 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .faq-cta p {
   color: var(--cinza);
   font-size: 0.95rem;
+}
+
+/* ===== CTA BLOG ===== */
+.blog-cta-banda {
+  background: linear-gradient(135deg, var(--azul) 0%, #14274a 100%);
+  padding: 64px 0;
+}
+.blog-cta-banda-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.blog-cta-texto h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--branco);
+  margin-bottom: 10px;
+}
+.blog-cta-texto p {
+  color: rgba(255,255,255,0.72);
+  max-width: 520px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+.blog-cta-banda .btn-primario {
+  flex-shrink: 0;
 }
 
 /* ===== FORMULÁRIO DE CONTATO ===== */

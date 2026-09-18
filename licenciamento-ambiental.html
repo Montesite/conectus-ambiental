@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5C3T2ZNC');</script>
+  <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Licenciamento Ambiental — Conectus Engenharia Ambiental</title>
@@ -12,6 +19,7 @@
   <meta property="og:description" content="LP, LI, LO, renovação e dispensa de licença. Equipe técnica conduzindo todo o processo junto aos órgãos.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://conectusambiental.com.br/licenciamento-ambiental.html">
+  <link rel="canonical" href="https://conectusambiental.com.br/licenciamento-ambiental.html">
   <meta property="og:image" content="images/og-image.png">
   <meta property="og:locale" content="pt_BR">
 
@@ -25,7 +33,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5C3T2ZNC"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
+  <div id="scroll-progress" aria-hidden="true"></div>
   <header id="header">
     <div class="header-container">
       <a href="index.html#inicio" class="logo" aria-label="Conectus — Início">
@@ -34,11 +47,19 @@
       <nav class="desktop-nav" aria-label="Navegação principal">
         <a href="index.html#inicio">Início</a>
         <a href="index.html#sobre">Sobre</a>
-        <a href="index.html#servicos">Serviços</a>
+        <div class="nav-dropdown">
+          <a href="index.html#servicos">Serviços <i class="fas fa-chevron-down" style="font-size: 0.8em; margin-left: 4px;"></i></a>
+          <div class="dropdown-menu">
+            <a href="licenciamento-ambiental.html">Licenciamento Ambiental</a>
+            <a href="servicos-ibama.html">Serviços IBAMA</a>
+            <a href="gestao-residuos.html">Gestão de Resíduos</a>
+          </div>
+        </div>
         <a href="index.html#galeria">Galeria</a>
         <a href="index.html#depoimentos">Depoimentos</a>
         <a href="index.html#faq">FAQ</a>
         <a href="index.html#contato">Contato</a>
+        <a href="https://blog.conectusambiental.com.br/">Blog</a>
       </nav>
       <a href="https://wa.me/5519991110898?text=Ol%C3%A1%2C%20gostaria%20de%20uma%20consultoria%20de%20licenciamento%20ambiental." class="header-whatsapp" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-whatsapp" aria-hidden="true"></i> Fale conosco
@@ -52,39 +73,25 @@
   <nav id="navMenu" class="mobile-nav" aria-label="Menu mobile" aria-hidden="true">
     <a href="index.html#inicio" class="nav-link">Início</a>
     <a href="index.html#sobre" class="nav-link">Sobre</a>
-    <a href="index.html#servicos" class="nav-link">Serviços</a>
+    <a href="index.html#servicos" class="nav-link">Serviços Gerais</a>
+    <a href="licenciamento-ambiental.html" class="nav-link sub-link" style="padding-left: 20px; font-size: 0.9em; color: var(--verde-claro);">— Licenciamento</a>
+    <a href="servicos-ibama.html" class="nav-link sub-link" style="padding-left: 20px; font-size: 0.9em; color: var(--verde-claro);">— Serviços IBAMA</a>
+    <a href="gestao-residuos.html" class="nav-link sub-link" style="padding-left: 20px; font-size: 0.9em; color: var(--verde-claro);">— Gestão de Resíduos</a>
     <a href="index.html#galeria" class="nav-link">Galeria</a>
     <a href="index.html#depoimentos" class="nav-link">Depoimentos</a>
     <a href="index.html#faq" class="nav-link">FAQ</a>
     <a href="index.html#contato" class="nav-link">Contato</a>
+    <a href="https://blog.conectusambiental.com.br/" class="nav-link">Blog</a>
     <a href="https://wa.me/5519991110898" class="nav-link nav-wpp" target="_blank" rel="noopener noreferrer">
       <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
     </a>
   </nav>
 
-  <section class="hero" style="min-height: 70vh; padding: 140px 0 80px;">
-    <div class="hero-overlay" aria-hidden="true"></div>
-    <div class="hero-conteudo">
-      <div class="hero-badge"><i class="fas fa-file-contract" aria-hidden="true"></i> Licenciamento ambiental</div>
-      <h1 style="color:#fff; font-family: var(--fonte-titulo); font-size: clamp(2rem,5vw,3.5rem); margin: 12px 0;">Licenciamento Ambiental Completo</h1>
-      <h2>Da Licença Prévia à Licença de Operação, conduzimos todo o processo</h2>
-      <p>Acompanhamento técnico junto à CETESB, IBAMA, Secretarias de Meio Ambiente e prefeituras. Foco em prazos, conformidade legal e tranquilidade para a sua operação.</p>
-      <div class="hero-botoes">
-        <a href="https://wa.me/5519991110898?text=Ol%C3%A1%2C%20gostaria%20de%20uma%20consultoria%20de%20licenciamento%20ambiental." class="btn-primario" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-whatsapp" aria-hidden="true"></i> Solicitar diagnóstico gratuito
-        </a>
-        <a href="index.html#contato" class="btn-contorno">
-          <i class="fas fa-envelope" aria-hidden="true"></i> Entrar em contato
-        </a>
-      </div>
-    </div>
-  </section>
-
   <section class="servicos">
     <div class="container">
       <div class="cabecalho-secao claro fade-in">
-        <span class="etiqueta claro">O que cobrimos</span>
-        <h2>Modalidades de licenciamento</h2>
+        <span class="etiqueta claro">O que fazemos</span>
+        <h2>Licenciamento Ambiental e de Produtos Controlados</h2>
         <p>Atuamos em todas as etapas do processo, do enquadramento inicial à renovação periódica</p>
       </div>
 
@@ -115,7 +122,7 @@
           <div class="servico-icone"><i class="fas fa-rotate" aria-hidden="true"></i></div>
           <span class="servico-categoria">Renovação</span>
           <h3>Renovação de LO</h3>
-          <p>Solicitação dentro do prazo legal de 120 dias antes do vencimento, garantindo continuidade automática da operação.</p>
+          <p>Solicitação dentro do prazo legal, garantindo continuidade automática da operação.</p>
         </div>
 
         <div class="servico-card fade-in">
@@ -132,6 +139,13 @@
           <p>Reconhecimento formal da não exigibilidade de licenciamento ambiental para atividades enquadradas em critérios legais.</p>
         </div>
 
+        <div class="servico-card fade-in">
+          <div class="servico-icone"><i class="fas fa-shield" aria-hidden="true"></i></div>
+          <span class="servico-categoria">Licenciamento</span>
+          <h3>Produtos Controlados</h3>
+          <p>Licenciamento de Produtos Controlados pelo Exército, Polícia Federal e Polícia Civil, com toda a documentação e acompanhamento do processo.</p>
+        </div>
+
       </div>
     </div>
   </section>
@@ -141,12 +155,12 @@
       <div class="sobre-grid">
         <div class="sobre-historia slide-esq">
           <span class="etiqueta">Como trabalhamos</span>
-          <h2>Da análise ao despacho final, sem dor de cabeça</h2>
-          <p>Iniciamos com um <strong>diagnóstico técnico gratuito</strong> da sua atividade para identificar o tipo de licenciamento exigido pelos órgãos competentes. A partir daí, montamos um plano de ação com prazos e documentos.</p>
-          <p>Conduzimos a elaboração de estudos, memoriais descritivos, plantas, relatórios e demais documentos exigidos. Protocolamos junto ao órgão e acompanhamos cada despacho até a emissão da licença.</p>
-          <p>Você recebe atualizações periódicas e respostas rápidas — nada de processo parado por falta de comunicação.</p>
+          <h2>Da análise à emissão da licença, sem complicações.</h2>
+          <p>Iniciamos com um <strong>diagnóstico técnico gratuito</strong> da sua atividade para identificar o tipo de licenciamento exigido pelos órgãos competentes.</p>
+          <p>Conduzimos a elaboração de estudos, memoriais descritivos, plantas, relatórios e demais documentos exigidos. Protocolamos junto ao órgão e acompanhamos todo o processo até a emissão da licença.</p>
+          <p>Você recebe atualizações periódicas e respostas rápidas, sem processo parado por falta de comunicação.</p>
           <a href="https://wa.me/5519991110898?text=Ol%C3%A1%2C%20gostaria%20de%20uma%20consultoria%20de%20licenciamento%20ambiental." class="btn-primario" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-whatsapp" aria-hidden="true"></i> Falar com as especialistas
+            <i class="fab fa-whatsapp" aria-hidden="true"></i> Falar com especialista
           </a>
         </div>
         <div class="sobre-mvv slide-dir">
@@ -163,7 +177,7 @@
           <div class="mvv-card destaque fade-in">
             <div class="mvv-icone"><i class="fas fa-handshake-angle" aria-hidden="true"></i></div>
             <h3>Acompanhamento</h3>
-            <p>Protocolamos, monitoramos despachos e respondemos exigências até a emissão final da licença.</p>
+            <p>Protocolamos e acompanhamos todo o processo até a emissão da licença.</p>
           </div>
         </div>
       </div>
@@ -192,7 +206,7 @@
             <i class="fas fa-chevron-down faq-chevron" aria-hidden="true"></i>
           </button>
           <div class="faq-resposta" hidden>
-            <p>Licenças simplificadas saem em 30 a 90 dias. LP, LI e LO completas variam conforme o porte e o órgão, podendo levar de meses a alguns anos. Acompanhamos de perto cada etapa para evitar atrasos.</p>
+            <p>O prazo de emissão de cada licença varia conforme a atividade do empreendimento e a análise do órgão ambiental, podendo ocorrer de 30 dias a alguns meses. Acompanhamos de perto cada etapa para evitar atrasos.</p>
           </div>
         </div>
         <div class="faq-item">
@@ -201,12 +215,12 @@
             <i class="fas fa-chevron-down faq-chevron" aria-hidden="true"></i>
           </button>
           <div class="faq-resposta" hidden>
-            <p>A renovação deve ser protocolada com antecedência mínima de <strong>120 dias</strong> antes do vencimento. Nesse caso, a licença anterior segue automaticamente válida até a decisão do órgão.</p>
+            <p>A renovação deve ser protocolada com antecedência mínima de 120 dias antes do vencimento, ou conforme a exigência do órgão ambiental competente. Nesse caso, a licença anterior segue automaticamente válida até a decisão do órgão.</p>
           </div>
         </div>
       </div>
       <div class="faq-cta fade-in">
-        <p>Quer saber qual licença a sua empresa precisa? Fale com nossas especialistas.</p>
+        <p>Quer saber se sua empresa precisa de licença ambiental? Fale com a nossa equipe.</p>
         <a href="https://wa.me/5519991110898?text=Ol%C3%A1%2C%20gostaria%20de%20uma%20consultoria%20de%20licenciamento%20ambiental." class="btn-primario" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-whatsapp" aria-hidden="true"></i> Falar pelo WhatsApp
         </a>
@@ -217,10 +231,23 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-conteudo">
+
         <div class="footer-marca">
-          <img src="images/logo.png" alt="Conectus Engenharia Ambiental" class="footer-logo" loading="lazy">
+          <img src="images/logo.png" alt="Conectus Soluções Ambientais" class="footer-logo" loading="lazy">
           <p>Consultoria especializada em licenciamento ambiental. Soluções responsáveis para sua empresa.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/conectus.ambiental/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/conectus-sa-b652531ab/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/conectus.ambiental" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
+
         <div class="footer-links-col">
           <h4>Soluções</h4>
           <nav aria-label="Soluções">
@@ -229,6 +256,7 @@
             <a href="gestao-residuos.html">Gestão de Resíduos</a>
           </nav>
         </div>
+
         <div class="footer-contato-col">
           <h4>Contato</h4>
           <p><i class="fas fa-phone" aria-hidden="true"></i><a href="tel:+5519991110898">(19) 99111-0898</a></p>
@@ -236,6 +264,7 @@
           <p><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:contato@conectusambiental.com">contato@conectusambiental.com</a></p>
           <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i>Valinhos/SP</p>
         </div>
+
       </div>
       <div class="footer-base">
         <p>© 2025 Conectus Engenharia Ambiental · CNPJ 39.810.641/0001-47 · Valinhos/SP</p>
@@ -247,7 +276,27 @@
     <i class="fab fa-whatsapp" aria-hidden="true"></i>
   </a>
 
+  <button id="voltarTopo" class="voltar-topo" aria-label="Voltar ao topo da página">
+    <i class="fas fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
   <script>
+    // ===== HEADER SCROLL =====
+    const header = document.getElementById('header');
+    const progressBar = document.getElementById('scroll-progress');
+    const btnTopo = document.getElementById('voltarTopo');
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY;
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      if (progressBar) progressBar.style.width = (scrolled / total * 100) + '%';
+      header.classList.toggle('rolado', scrolled > 60);
+      if (btnTopo) btnTopo.classList.toggle('visivel', scrolled > 400);
+    }, { passive: true });
+    if (btnTopo) {
+      btnTopo.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    }
+
+    // ===== MENU MOBILE =====
     const menuToggle = document.getElementById('menuToggle');
     const navMenu = document.getElementById('navMenu');
     if (menuToggle && navMenu) {
@@ -257,7 +306,17 @@
         menuToggle.setAttribute('aria-expanded', String(aberto));
         navMenu.setAttribute('aria-hidden', String(!aberto));
       });
+      navMenu.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('aberto');
+          menuToggle.classList.remove('ativo');
+          menuToggle.setAttribute('aria-expanded', 'false');
+          navMenu.setAttribute('aria-hidden', 'true');
+        });
+      });
     }
+
+    // ===== FAQ =====
     document.querySelectorAll('.faq-pergunta').forEach(btn => {
       btn.addEventListener('click', () => {
         const item = btn.closest('.faq-item');
@@ -275,6 +334,8 @@
         }
       });
     });
+
+    // ===== OBSERVER =====
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visivel'); observer.unobserve(e.target); } });
     }, { threshold: 0.1 });
